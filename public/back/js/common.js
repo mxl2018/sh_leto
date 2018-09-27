@@ -1,8 +1,8 @@
-$('document').ajaxStart(function(){
+$(document).ajaxStart(function(){
     NProgress.start()
 })
-$('document').ajaxStop(function(){
+$(document).ajaxStop(function(){
     setTimeout(function(){
-        NProgress.done
+        NProgress.done()
     },500)
 })
