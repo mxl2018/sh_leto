@@ -124,3 +124,8 @@ html,body{
 .modal-body .tips{
   color:red;
 }
+/*首页图标 */
+.chart{
+ width:100%;
+ padding-left: 180px;
+}
