@@ -93,7 +93,7 @@ html,body{
 }
 /* 首页右边内容 */
 /* 首页右边头部 */
-.content .content_header{
+.content_header{
   width:100%;
   height:50px;
   background-color: #3C8DBC;
@@ -111,10 +111,15 @@ html,body{
   line-height: 50px;
   font-size: 20px;
 }
-/* 主页右边内容里面的内容 */
+/* 主页右边内容里面的内容. */
+.content{
+  margin-left:210px;
+}
+.content table{
+  width:96%;
+}
 .content_body{
   margin-top:80px;
-  margin-left:210px;
 }
 .content_body ol{
   border-radius:5px;
