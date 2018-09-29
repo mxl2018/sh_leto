@@ -1,135 +1,160 @@
-*{
-  margin:0;
-  padding: 0;
-}
-ul,li{
-  list-style: none;
-}
+/*
+  将 a 标签样式重置
+*/
+/* lvha */
 a:link,
 a:visited,
 a:hover,
-a:active{
+a:active {
   text-decoration: none;
 }
-/* 登录页面css */
-.body_bg{
-  background-color:#222D32;
+/* 将 ul 样式重置 */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-html,body{
-  width:100%;
-  height:100%;
-}
-*{
-  margin:0;
-  padding:0;
-}
-.mg-top{
-  margin-top:150px;
-}
-.panel-heading .panel-title{
+
+.table.table-bordered tr th,
+.table.table-bordered tr td {
   text-align: center;
-  height:40px;
+  /* 表格中垂直对齐方式 */
+  vertical-align: middle;
+}
+
+
+
+.body_bg {
+  background-color: #222D32;
+}
+
+.panel .panel-title {
+  height: 40px;
   line-height: 40px;
+  text-align: center;
   font-size: 20px;
 }
-.login{
-  margin-left:30px;
+
+.mt_150 {
+  margin-top: 150px;
 }
-/* 首页css */
-/* 首页左边栏公共部分 */
-.left_side{
-  width:180px;
-  height:100%;
-  position:fixed;
-  top:0;
-  background-color:#222D32;
-  z-index:999;
+
+.red {
+  color: #A94442;
 }
-.left_side .side_title{
-  width:180px;
-  height:50px;
-  background-color: #367FA9;
+
+
+/* 侧边栏样式 */
+.lt_aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  z-index: 999;
+  transition: all 1s;
 }
-.left_side .side_title p{
-  text-align: center;
+.lt_aside.hidemenu {
+  left: -180px;
+}
+
+
+.lt_aside .brand {
+  width: 180px;
+  height: 50px;
   line-height: 50px;
-  height:50px;
-  color:#fff;
+  text-align: center;
+  background-color: #367FA9;
   font-size: 25px;
 }
-.left_side .side_user .super_user{
-  padding:30px 0;
-}
-.left_side .side_user .super_user img{
-  width:80px;
-  height:80px;
-  display:block;
-  margin:0 auto;
-}
-.left_side .side_user .super_user p{
-  text-align:center;
-  height:40px;
-  line-height: 40px;
+.lt_aside .brand a {
   color: #fff;
-  font-size: 18px;
 }
-.side_user .nav{
+.lt_aside .user {
+  height: 180px;
+  padding-top: 30px;
+}
+.lt_aside .user img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+.lt_aside .user p {
+  font-size: 18px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
   color: #fff;
 }
 
-.row .side_user .nav ul a.current{
-  background-color: #1D1F21;
-  border-left:3px solid #006699;
-}
-.side_user .nav a{
-  display:block;
+.lt_aside .nav a {
+  width: 100%;
+  height: 40px;
   line-height: 40px;
-  color:#fff;
-  padding-left:40px;
-  width:100%;
-}
-.side_user .nav .child a{
-  padding-left:60px;
-}
-/* 首页右边内容 */
-/* 首页右边头部 */
-.content_header{
-  width:100%;
-  height:50px;
-  background-color: #3C8DBC;
-  position:fixed;
-  top:0;
-}
-.content_header a {
   display: block;
-  width:50px;
-  height:50px;
-  color:#fff;
-  text-align: center;
-  height:50px;
+  color: #fff;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.lt_aside .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+.lt_aside .nav i {
+  margin-right: 5px;
+}
+.lt_aside .nav .child a {
+  padding-left: 60px;
+}
+
+
+/* 主体部分 */
+.lt_topbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #3C8DBC;
+  padding-left: 180px;
+  transition: all 1s;
+  z-index: 666;
+}
+.lt_topbar.hidemenu {
+  padding-left: 0;
+}
+.lt_topbar a {
+  width: 50px;
+  height: 50px;
   line-height: 50px;
+  color: #fff;
+  text-align: center;
   font-size: 20px;
 }
-/* 主页右边内容里面的内容. */
-.content{
-  margin-left:180px;
+
+.lt_main {
+  padding-left: 180px;
+  padding-top: 50px;
+  height: 1000px;
+  transition: all 1s;
 }
-.content table{
-  width:96%;
+.lt_main.hidemenu {
+  padding-left: 0;
 }
-.content_body{
-  margin-top:80px;
+.lt_main .breadcrumb {
+  margin-top: 20px;
 }
-.content_body ol{
-  border-radius:5px;
-  width:96%;
+
+.echarts_1,
+.echarts_2 {
+  width: 48%;
+  height: 400px;
+  /*background-color: skyblue;*/
 }
-/* 模态框 */
-.modal-body .tips{
-  color:red;
-}
-/*首页图标 */
-.chart{
- width:100%;
- padding-left: 180px;
+/* 一级分类样式 */
+.mt_20{
+  margin-top:20px;
 }
