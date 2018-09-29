@@ -99,7 +99,6 @@ html,body{
   background-color: #3C8DBC;
   position:fixed;
   top:0;
-  padding-left:180px;
 }
 .content_header a {
   display: block;
@@ -113,7 +112,7 @@ html,body{
 }
 /* 主页右边内容里面的内容. */
 .content{
-  margin-left:210px;
+  margin-left:180px;
 }
 .content table{
   width:96%;
